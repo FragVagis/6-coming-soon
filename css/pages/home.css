@@ -68,7 +68,7 @@
     text-decoration: none;
     color: red;
 }
-.section-description > a :hover {
+.section-description > a:hover {
     text-decoration: underline;
     color: darkred;
 }
