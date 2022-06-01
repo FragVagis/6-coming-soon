@@ -14,6 +14,17 @@ body {
     --main-color: #03a9f4;
 }
 
-.bg-main {
-    background-color: var(--main-color);
+img {
+    width: 100%;
+    object-fit:contain ;
 }
+
+.bg-main {
+    background-image: url(../../img/background\ img.JPG);
+    background-size: cover;
+    width: auto;
+    height: 755px;
+    background-attachment: fixed;
+}
+.bg-footer {
+    background-color: var(--main-color);
