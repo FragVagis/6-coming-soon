@@ -99,11 +99,17 @@
     margin: 40px;
 }
 .bg-footer > .row-short > .futeriukai {
-    display: flex;
     justify-content: center;
-    gap: 20px;
+    margin: 30px;
 }
-
 /* FOOTER - end */
-
+.futeriukai > *::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    border-left:  red;
+}
+.futeriukai > *:last-child::after {
+    display: none;
+}
 
