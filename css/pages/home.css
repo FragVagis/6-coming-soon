@@ -76,6 +76,68 @@
 /* MAIN - end */
 
 /* FOOTER - start */
-/* FOOTER - end */
+.bg-main {
+    background-image: url(../../img/background\ img.JPG);
+    background-size: cover;
+    width: auto;
+    height: 755px;
+    background-attachment: fixed;
+}
+.bg-footer {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+.bg-footer > .row-short > img {
+    width: auto;
+    height: 60px;
+}
+.bg-footer > .logo3 {
+    height: 60px;
+    margin: 40px;
+}
+.bg-footer > .row-short > .futeriukai {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+/* FOOTER - end */
+.futeriukai > * {
+    position: relative;
+}
+.futeriukai > *::after {
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 20px;
+    background-color: red;
+
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(50%, -50%);
+}
+.futeriukai > *:last-child::after {
+    display: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.socials > a {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
 
