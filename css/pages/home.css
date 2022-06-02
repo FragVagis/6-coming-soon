@@ -100,16 +100,44 @@
 }
 .bg-footer > .row-short > .futeriukai {
     justify-content: center;
-    margin: 30px;
+    display: flex;
+    gap: 30px;
 }
 /* FOOTER - end */
+.futeriukai > * {
+    position: relative;
+}
 .futeriukai > *::after {
+    display: inline-block;
     content: "";
     width: 2px;
     height: 20px;
-    border-left:  red;
+    background-color: red;
+
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(50%, -50%);
 }
 .futeriukai > *:last-child::after {
     display: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.socials > a {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
 }
 
